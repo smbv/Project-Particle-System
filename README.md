@@ -49,6 +49,6 @@ This is a particle system project written in C++ using the openFrameworks librar
 ## Author
 
 - [Sofia M. Barrera Vega](https://github.com/smbv)
-- [Alexis Morales](https://github.com/AlexiMoral)
+- [Alexis Morales](https://github.com/AlexisMoral)
 
 
