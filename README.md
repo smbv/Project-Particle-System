@@ -1,28 +1,54 @@
-# PA1: Particle System
-This project is based on the OpenFrameworks Particle example.
- This repository is part of a Programming Assignment for the Advanced Programming Course.
- The purpose of this project is to help the student create practical programming skills by implementing
- changes to the base code that require strong understanding of the concepts discussed in class.
-## Setup
-1. Clone this project inside an OpenFrameworks installation's "apps/myApps/" directory
-2. Run the command "make" in the terminal or the "Build" Task in VSCode.
+# Particle System Project
 
-## Submitting Assignment
-To submit this assignment, create a Release with the branch that holds all the changes you have added. If no Release is made,
-the last commit to the master branch will be graded.
+This is a particle system project written in C++ using the openFrameworks library. It simulates the behavior of particles with different modes, such as attraction to the mouse, repulsion from the mouse, noise-driven movement, and proximity to attractor points.
 
-Don't forget that you must also fill out an evaluation form in Moodle to consider the project submitted.
+## Features
 
-## Grading
-You will only be graded for specs that were completed.
+- Particle modes:
+  - **ATTRACT:** Particles are attracted to the mouse cursor.
+  - **REPEL:** Particles are repelled from the mouse cursor.
+  - **NOISE:** Simulates falling snow with noise-driven movement.
+  - **NEAREST_POINTS:** Particles are attracted to the nearest attractor point.
 
-Any project that doesn't compile will receive a 0.
+- Particle behaviors:
+  - Adjustable velocity (normal, half, double speed).
+  - Ability to stop particle movement.
+  - Zoom effect when particles are within a specified region.
 
-If a partner has no commits in the repositories, he will receive a 0.
+- Color cycling: Particles can cycle through different colors or remain a fixed color.
 
-## Student Notes
-We cleaned the display so it looks cleaner, and added a menu button with all the commands inside so the display can be as clean as possible.
+## Usage
 
-## Participants
-Alexis Morales - alexis.morales2@upr.edu
-Sofia Barrera - sofia.barrera@upr.edu
+### Keyboard Controls
+
+- **1-4:** Change the particle mode.
+- **Spacebar:** Reset particles.
+- **'t':** Toggle color cycling.
+- **'s':** Start/stop particle movement.
+- **'d':** Double particle velocity.
+- **'a':** Halve particle velocity.
+- **'r':** Start/stop recording keypresses.
+- **'p':** Replay recorded keypresses.
+- **'c':** Cancel replay.
+- **'m':** Toggle the display of command menu.
+
+### Mouse Controls
+
+- **Left-click and drag:** Create a magnifying rectangle to zoom particles.
+- **Right-click inside the rectangle:** Remove the rectangle.
+
+## Additional Information
+
+- Recorded keypresses can be replayed to demonstrate particle behavior.
+- The project includes a menu that displays available commands.
+
+## Dependencies
+
+- This project is built using the openFrameworks library.
+
+## Author
+
+- [Sofia M. Barrera Vega](https://github.com/smbv)
+- [Alexis Morales](https://github.com/AlexiMoral)
+
+
